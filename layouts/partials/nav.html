@@ -1,5 +1,5 @@
-<nav class="nav">
+<ul class="nav">
   {{ range .Site.Menus.main }}
-  <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+  <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
   {{ end }}
-</nav>
+</ul>
