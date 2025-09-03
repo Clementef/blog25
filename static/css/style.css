@@ -28,6 +28,9 @@ a {
 .content {
   padding: 0 1.5em 0 1.5em;
   flex: 1;
+}
+
+.content-centered {
   max-width: 600px;
   margin: auto;
 }
@@ -36,6 +39,7 @@ footer {
   background: var(--current_line);
   flex-shrink: 0;
   text-align: center;
+  padding: 0 1.5em 0 1.5em;
 }
 
 .nav {

@@ -1,5 +1,4 @@
 {{ define "main" }}
-
 <!-- title -->
 <h1>{{ .Title | markdownify }}</h1>
 
@@ -21,6 +20,6 @@
 {{ end }}
 
 <!-- main content -->
-<main>{{ .Content }}</main>
+{{ .Content }}
 
 {{ end }}

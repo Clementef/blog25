@@ -9,7 +9,9 @@
     {{ partial "nav.html" . }}
 
     <!-- page content -->
-    <div class="content">{{ block "main" . }} {{ end }}</div>
+    <div class="content">
+      <div class="content-centered">{{ block "main" . }} {{ end }}</div>
+    </div>
 
     <!-- footer -->
     <footer>{{ partial "footer.html" . }}</footer>
