@@ -1,4 +1,7 @@
-{{ define "main" }} {{if not .IsHome }}
+{{ define "main" }}
+
+<!-- page title -->
+{{if not .IsHome }}
 <h1>{{ .Title | markdownify }}</h1>
 {{ end }}
 

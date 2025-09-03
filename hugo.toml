@@ -3,26 +3,23 @@ title = 'min site'
 baseurl = "/"
 
 [params]
-custom_css = ["css/normalize.css", "css/style.css"]
+  custom_css = ["css/normalize.css", "css/style.css"]
+
+[taxonomies]
+  topic = 'topics'
 
 # navbar pages
 [[menu.main]]
-name = "Home"
-url = ""
-weight = 1
+  name = "Home"
+  url = ""
+  weight = 1
 
 [[menu.main]]
-name = "About"
-url = "about/"
-weight = 2
+  name = "About"
+  url = "about/"
+  weight = 2
 
 [[menu.main]]
-name = "Categories"
-url = "categories/"
-weight = 3
-
-[[menu.main]]
-name = "Tags"
-url = "tags/"
-weight = 4
-
+  name = "Topics"
+  url = "topics/"
+  weight = 3
