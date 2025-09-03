@@ -1,12 +1,26 @@
 {{ define "main" }}
 
+<!-- title -->
 <h1>{{ .Title | markdownify }}</h1>
+
+<!-- date published -->
 {{ with .Params.author }}
 <h2>{{ . }}</h2>
 {{ end }} {{ if (gt .Params.date 0) }}
 <h2>{{ .Date.Format "2006/01/02" }}</h2>
 {{ end }}
 
+<!-- topics list -->
+{{ if .Params.topics }}
+<h3>topics</h3>
+<ul>
+  {{ range .Params.topics }}
+    <li><a href="{{ "/topics/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+  {{ end }}
+</ul>
+{{ end }}
+
+<!-- main content -->
 <main>{{ .Content }}</main>
 
 {{ end }}
