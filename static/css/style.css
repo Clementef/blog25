@@ -25,12 +25,12 @@ a {
   text-decoration: none;
 }
 
-.content {
+.main {
   padding: 0 1.5em 0 1.5em;
   flex: 1;
 }
 
-.content-centered {
+.main-centered {
   max-width: 600px;
   margin: auto;
 }
