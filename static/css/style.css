@@ -141,5 +141,5 @@ footer {
 }
 
 .topics-list a:hover {
-  background: var(--comment);
+  background: var(--current_line);
 }
