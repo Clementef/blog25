@@ -1,1 +1,5 @@
-# example of a new navbar page
++++
+title = 'About'
++++
+
+this is an example of a new navbar page
