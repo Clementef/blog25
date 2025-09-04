@@ -29,6 +29,11 @@ a {
 table {
   border-collapse: collapse;
   margin: auto;
+  text-align: center;
+}
+
+thead {
+  background: var(--current_line);
 }
 
 tr {
