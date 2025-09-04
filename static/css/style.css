@@ -25,6 +25,25 @@ a {
   text-decoration: none;
 }
 
+/* explicit border style */
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 0;
+}
+
+td,
+th {
+  padding: 0.5em 0.7em 0.5em 0.7em;
+}
+
 .main {
   padding: 0 1.5em 0 1.5em;
   flex: 1;
