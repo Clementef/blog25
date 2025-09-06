@@ -13,7 +13,9 @@
           <p>{{ .Date.Format "2006-01-02" }}</p>
         </div>
         {{ if .Summary }}
-        <p>{{ .Summary | strings.Truncate 200 | plainify }}</p>
+        <p class="post-summary">
+          {{ .Summary | strings.Truncate 200 | plainify }}
+        </p>
         {{ end }}
       </li>
     </a>

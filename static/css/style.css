@@ -154,32 +154,28 @@ footer {
 }
 
 .post-wrapper {
-  border: 1px solid var(--current_line);
   margin-bottom: 1em;
 }
 
 .post {
+  border: 1px solid var(--current_line);
   display: flex;
   flex-flow: column;
-  padding: 0 1em 0 1em;
+  padding: 1em 1em 1em 1em;
   color: var(--foreground);
+}
+
+.post-summary {
+  padding-top: 1em;
+}
+
+.post h2,
+.post p {
+  margin: 0;
 }
 
 .post-title h2 {
   color: var(--green);
-  margin-bottom: 0;
-}
-
-.post-title p {
-  margin-top: 0;
-}
-
-.single-title {
-  margin-bottom: 0;
-}
-
-.single-date {
-  margin-top: 0;
 }
 
 .topics-simple-list {
@@ -190,7 +186,7 @@ footer {
   margin: 0;
   padding: 0;
   border-right: 1px solid var(--current_line);
-  border-top: 1px solid var(--current_line);
+  border-bottom: 1px solid var(--current_line);
 }
 
 .topics-simple-list a {
