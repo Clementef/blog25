@@ -1,27 +1,14 @@
 {{ define "main" }}
 <!-- title -->
-<h1>{{ .Title | markdownify }}</h1>
+<h1 class="single-title">{{ .Title | markdownify }}</h1>
 
 <!-- date published -->
-{{ with .Params.author }}
-<h2>{{ . }}</h2>
-{{ end }} {{ if (gt .Params.date 0) }}
-<h2>{{ .Date.Format "2006-01-02" }}</h2>
-{{ end }}
+{{ if (gt .Params.date 0) }}
+<h3 class="single-date">{{ .Date.Format "2006-01-02" }}</h3>
+{{ end }} {{ partial "topics.html" . }}
 
-<!-- topics list -->
-{{ if .Params.topics }}
-<div class="topics-list-center">
-  <ul class="topics-list">
-    <p>topics</p>
-    {{ range .Params.topics }}
-      <li><a href="{{ "/topics/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
-    {{ end }}
-  </ul>
-</div>
-{{ end }}
+<!-- table of contents -->
+{{ .TableOfContents }}
 
 <!-- main content -->
-{{ .Content }}
-
-{{ end }}
+{{ .Content }} {{ end }}

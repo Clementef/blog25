@@ -2,13 +2,21 @@
 <h1>{{ .Title | markdownify }}</h1>
 {{ end }} {{ with .Content }} {{ . }} {{ end }}
 
-<ul>
+<ul class="post-list">
   {{ $pages := .Pages }} {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end
   }} {{ range (where $pages "Section" "!=" "") }}
-  <li>
-    <span class="date">{{ .Date.Format "2006-01-02" }}</span>
-    <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
-  </li>
+  <div class="post-wrapper">
+    <a href="{{ .RelPermalink }}">
+      <li class="post">
+        <div class="post-title">
+          <h2>{{ .Title | markdownify }}</h2>
+          <p>{{ .Date.Format "2006-01-02" }}</p>
+        </div>
+        <p>{{ .Summary | strings.Truncate 200 | plainify }}</p>
+      </li>
+    </a>
+    <!-- {{ partial "topics_simple.html" . }} -->
+  </div>
   {{ end }}
 </ul>
 {{ end }}

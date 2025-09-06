@@ -40,7 +40,7 @@ tr {
   border-bottom: 1px solid #ddd;
 }
 
-tbody tr:last-of-type {
+tr:last-of-type {
   border-bottom: 0;
 }
 
@@ -127,7 +127,7 @@ footer {
 .topics-list a {
   text-decoration: none;
   display: block;
-  padding: 1em;
+  padding: 0.5em 1em 0.5em 1em;
   color: var(--foreground);
 }
 
@@ -135,11 +135,44 @@ footer {
   text-decoration: none;
   display: block;
   margin: 0;
-  padding: 1em;
+  padding: 0.5em 1em 0.5em 1em;
   background: var(--current_line);
   color: var(--foreground);
 }
 
 .topics-list a:hover {
   background: var(--current_line);
+}
+
+.post-list {
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid blue; */
+}
+
+.post {
+  border: 1px solid var(--current_line);
+  margin-bottom: 1em;
+  padding: 0 1em 0 1em;
+  color: var(--foreground);
+}
+
+.post-title h2 {
+  color: var(--green);
+  margin-bottom: 0;
+}
+
+.post-title p {
+  margin-top: 0;
+}
+
+.single-title {
+  margin-bottom: 0;
+}
+
+.single-date {
+  margin-top: 0;
 }
