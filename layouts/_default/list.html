@@ -12,10 +12,12 @@
           <h2>{{ .Title | markdownify }}</h2>
           <p>{{ .Date.Format "2006-01-02" }}</p>
         </div>
+        {{ if .Summary }}
         <p>{{ .Summary | strings.Truncate 200 | plainify }}</p>
+        {{ end }}
       </li>
     </a>
-    <!-- {{ partial "topics_simple.html" . }} -->
+    {{ partial "topics_simple.html" . }}
   </div>
   {{ end }}
 </ul>

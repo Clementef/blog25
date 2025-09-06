@@ -1,0 +1,10 @@
+{{ if .Params.topics }}
+<div class="topics-simple-list-center">
+  <ul class="topics-simple-list">
+    <p>topics</p>
+    {{ range .Params.topics }}
+      <li><a href="{{ "/topics/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

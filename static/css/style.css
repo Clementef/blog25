@@ -153,9 +153,14 @@ footer {
   /* border: 1px solid blue; */
 }
 
-.post {
+.post-wrapper {
   border: 1px solid var(--current_line);
   margin-bottom: 1em;
+}
+
+.post {
+  display: flex;
+  flex-flow: column;
   padding: 0 1em 0 1em;
   color: var(--foreground);
 }
@@ -175,4 +180,35 @@ footer {
 
 .single-date {
   margin-top: 0;
+}
+
+.topics-simple-list {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-right: 1px solid var(--current_line);
+  border-top: 1px solid var(--current_line);
+}
+
+.topics-simple-list a {
+  text-decoration: none;
+  display: block;
+  padding: 0.2em 0.4em 0.2em 0.4em;
+  color: var(--foreground);
+}
+
+.topics-simple-list p {
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  padding: 0.2em 0.4em 0.2em 0.4em;
+  background: var(--current_line);
+  color: var(--foreground);
+}
+
+.topics-simple-list a:hover {
+  background: var(--current_line);
 }
