@@ -1,6 +1,6 @@
-{{ define "main" }} {{if not .IsHome }}
+{{ define "main" }}
 <h1>{{ .Title | markdownify }}</h1>
-{{ end }} {{ with .Content }} {{ . }} {{ end }}
+{{ with .Content }} {{ . }} {{ end }}
 
 <ul class="post-list">
   {{ $pages := .Pages }} {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end

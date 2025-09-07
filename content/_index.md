@@ -1,6 +1,3 @@
 +++
-title = 'Home'
+title = 'Articles'
 +++
-
-# minimal hugo site
-
