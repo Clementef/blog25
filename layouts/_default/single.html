@@ -9,15 +9,17 @@
 
 <!-- table of contents -->
 {{ if in .TableOfContents "li" }}
-<div class="toc-wrapper">
+<div x-data="{ open: false }" class="toc-wrapper">
   <div class="toc-card">
-    <a class="toc-dropdown" href="#">
+    <a @click="open = ! open" class="toc-dropdown" href="#">
       <div class="toc-title">
         <h3>table of contents</h3>
         <i class="fa fa-angle-down" aria-hidden="true"></i>
       </div>
     </a>
-    {{ .TableOfContents }}
+    <div x-cloak x-show="open" @click.outside="open = false" class="toc-body">
+      {{ .TableOfContents }}
+    </div>
   </div>
 </div>
 {{ end }}
