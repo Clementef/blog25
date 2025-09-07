@@ -7,7 +7,8 @@ baseurl = "/"
     "css/topics_simple.css", "css/topics.css",
     "css/post_list.css", "css/nav.css",
     "css/table.css", "css/main.css",
-    "css/toc.css", "font-awesome-4.7.0/css/font-awesome.min.css"]
+    "css/toc.css", "css/single.css",
+    "font-awesome-4.7.0/css/font-awesome.min.css"]
 
 [taxonomies]
   topic = 'topics'
