@@ -8,7 +8,19 @@
 {{ end }} {{ partial "topics.html" . }}
 
 <!-- table of contents -->
-<div class="toc-wrapper">{{ .TableOfContents }}</div>
+{{ if in .TableOfContents "li" }}
+<div class="toc-wrapper">
+  <div class="toc-card">
+    <a class="toc-dropdown" href="#">
+      <div class="toc-title">
+        <h3>table of contents</h3>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+      </div>
+    </a>
+    {{ .TableOfContents }}
+  </div>
+</div>
+{{ end }}
 
 <!-- main content -->
 {{ .Content }}
