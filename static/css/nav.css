@@ -1,0 +1,47 @@
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1.5em;
+  background: var(--current_line);
+}
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: var(--foreground);
+}
+
+.nav a:hover {
+  background: var(--comment);
+}
+
+/* tablet */
+@media all and (max-width: 800px) {
+  .nav {
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .nav li {
+    flex: 1;
+    align-items: stretch;
+    text-align: center;
+  }
+}
+
+/* mobile */
+@media all and (max-width: 600px) {
+  .nav {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .nav a {
+    text-align: center;
+    padding: 0.5em;
+  }
+}

@@ -1,0 +1,30 @@
+.topics-simple-list {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-right: 1px solid var(--current_line);
+  border-bottom: 1px solid var(--current_line);
+}
+
+.topics-simple-list a {
+  text-decoration: none;
+  display: block;
+  padding: 0.2em 0.4em 0.2em 0.4em;
+  color: var(--foreground);
+}
+
+.topics-simple-list p {
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  padding: 0.2em 0.4em 0.2em 0.4em;
+  background: var(--current_line);
+  color: var(--foreground);
+}
+
+.topics-simple-list a:hover {
+  background: var(--current_line);
+}

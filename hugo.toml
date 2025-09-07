@@ -1,16 +1,19 @@
 languageCode = 'en-us'
-title = 'min site'
+title = 'blog25'
 baseurl = "/"
 
 [params]
-  custom_css = ["css/normalize.css", "css/style.css"]
+  custom_css = ["css/normalize.css", "css/style.css",
+    "css/topics_simple.css", "css/topics.css",
+    "css/post_list.css", "css/nav.css",
+    "css/table.css", "css/main.css"]
 
 [taxonomies]
   topic = 'topics'
 
 # navbar pages
 [[menu.main]]
-  name = "Home"
+  name = "Articles"
   url = ""
   weight = 1
 

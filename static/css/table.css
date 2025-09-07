@@ -1,0 +1,23 @@
+table {
+  /* explicit border style */
+  border-collapse: collapse;
+  margin: auto;
+  text-align: center;
+}
+
+thead {
+  background: var(--current_line);
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:last-of-type {
+  border-bottom: 0;
+}
+
+td,
+th {
+  padding: 0.5em 0.7em 0.5em 0.7em;
+}

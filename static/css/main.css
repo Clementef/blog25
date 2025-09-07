@@ -1,0 +1,9 @@
+.main {
+  padding: 0 1.5em 1em 1.5em;
+  flex: 1;
+}
+
+.main-centered {
+  max-width: 600px;
+  margin: auto;
+}
