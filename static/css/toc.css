@@ -1,11 +1,24 @@
 #TableOfContents {
-  padding: 1em 1em 1em 0;
+  padding: 0.5em 1em 0.5em 0;
 }
 
 #TableOfContents ul {
   list-style: none;
+  margin: 0;
   padding: 0;
-  margin: 0 0 0 1em;
+  padding: 0 0 0 1em;
+}
+
+#TableOfContents li a {
+  display: block;
+}
+
+#TableOfContents li a:hover {
+  color: var(--green);
+}
+
+#TableOfContents li a:hover * {
+  color: var(--green);
 }
 
 .toc-wrapper {
